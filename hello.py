@@ -29,7 +29,4 @@ def show_post_str(blog_key):
     blog_post = db[blog_key]
     return render_template("blog_post.html", blog_post = blog_post)
 
-
-if __name__ == "__main__":
-    app.run(host=0.0.0.0)
      
