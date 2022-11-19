@@ -32,5 +32,5 @@ def show_post_str(blog_key):
     return render_template("blog_post.html", blog_post = blog_post)
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5506))
+    port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, use_reloader=True)   
