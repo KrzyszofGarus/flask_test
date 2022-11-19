@@ -1,12 +1,15 @@
 from flask import Flask
 from flask import render_template
+from flask import request
 
 app = Flask(__name__)
 db = {
-    "a":"blog post 1", 
+    "a":"blob post 1", 
     "b":"blog post 2",
     "c":"blog post 3"
     }
+
+    
 
 @app.route("/")
 def hello_world():
@@ -25,3 +28,4 @@ def show_post(post_id):
 def show_post_str(blog_key):
     blog_post = db[blog_key]
     return render_template("blog_post.html", blog_post = blog_post)
+     
